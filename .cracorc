@@ -1,0 +1,35 @@
+var path = require('path');
+var DotenvWebPack = require('dotenv-webpack');
+
+var webpackConfig = {
+	webpack: {
+		alias: {
+			App: path.resolve(__dirname, 'src/App'),
+			routes: path.resolve(__dirname, 'src/routes'),
+
+			'$redux-toolkit/store': path.resolve(__dirname, 'src/redux-toolkit/store'),
+			$selectors: path.resolve(__dirname, 'src/redux-toolkit/selectors'),
+			$slices: path.resolve(__dirname, 'src/redux-toolkit/slices'),
+
+			$apis: path.resolve(__dirname, 'src/apis'),
+
+			$components: path.resolve(__dirname, 'src/components'),
+			'$form-controls': path.resolve(__dirname, 'src/components/FormControls'),
+
+			$configs: path.resolve(__dirname, 'src/configs'),
+			$constants: path.resolve(__dirname, 'src/constants'),
+			$hooks: path.resolve(__dirname, 'src/hooks'),
+			$i18n: path.resolve(__dirname, 'src/i18n'),
+			$icons: path.resolve(__dirname, 'src/icons'),
+			$pages: path.resolve(__dirname, 'src/pages'),
+			$themes: path.resolve(__dirname, 'src/themes'),
+			$utils: path.resolve(__dirname, 'src/utils')
+		},
+
+    plugins: [
+      new DotenvWebPack()
+    ],
+	}
+};
+
+module.exports = webpackConfig;

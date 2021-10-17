@@ -1,0 +1,28 @@
+# NPM
+node_modules
+*.log
+*.gz
+
+# Build
+build
+
+# Testing
+coverage
+
+# ENV
+.env
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+.DS_Store*
+._*
+
+.directory
+*~
+
+# VS Code
+.vscode
+/.idea/*

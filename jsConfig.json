@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"module": "es6",
+		"target": "es6",
+		"moduleResolution": "node",
+		"baseUrl": "./",
+		"paths": {
+			"App": ["src/App"],
+			"routes": ["src/routes"],
+
+			"$redux-toolkit/store": ["src/redux-toolkit/store"],
+			"$selectors/*": ["src/redux-toolkit/selectors/*"],
+			"$slices/*": ["src/redux-toolkit/slices/*"],
+
+			"$apis/*": ["src/apis/*"],
+
+			"$components/*": ["src/components/*"],
+			"$form-controls/*": ["src/components/FormControls/*"],
+
+			"$configs/*": ["src/configs/*"],
+			"$constants/*": ["src/constants/*"],
+			"$hooks/*": ["src/hooks/*"],
+			"$i18n/*": ["src/i18n/*"],
+			"$icons/*": ["src/icons/*"],
+			"$pages/*": ["src/pages/*"],
+			"$themes/*": ["src/themes/*"],
+			"$utils/*": ["src/utils/*"]
+		}
+	},
+	"exclude": ["node_modules"]
+}
